@@ -1,0 +1,50 @@
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(159, 101, 214, 0.433);
+  text-align: center;
+  padding: 50px 0;
+}
+.list-xucsac {
+  margin-bottom: 20px;
+}
+.list-xucsac .xucsac {
+  margin-right: 20px;
+}
+
+.xucsac i {
+  font-size: 200px;
+}
+.wrapper button {
+  padding: 20px 150px;
+  cursor: pointer;
+}
+
+/* Animation cho xúc sắc khi roll */
+.shaking {
+  animation-name: wobble;
+  animation-duration: 1s;
+}
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
