@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Nhàn",
+      "address": "New York",
+      "city": "New York",
+      "country": "US",
+      "pincode": "97219"
+    },
+    {
+      "id": 2,
+      "name": "Trâm",
+      "address": "New York",
+      "city": "New York",
+      "country": "US",
+      "pincode": "97219"
+    }
+  ]
+}
