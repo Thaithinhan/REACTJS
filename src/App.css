@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e4e4e4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header .search-form i {
+  top: 15px;
+  left: 10px;
+}
+header .search-form input {
+  width: 500px;
+  box-shadow: 2px 2px 2px 3px rgba(226, 18, 39, 0.374);
+  border: 0.5px solid rgb(226, 18, 39);
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header .cart-user .nav-link {
+  font-size: 25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header .cart-user .number-buy {
+  position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
   color: white;
+  top: 5px;
+  right: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.sliders {
+  max-height: 220px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #e4e4e4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sliders .slick-slider {
+  max-height: 200px;
+}
+.sliders .slick-slide {
+  border: 0.5px solid #e4e4e4;
+  margin-right: 10px;
+  text-align: center;
+}
+.sliders img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.sliders figcaption {
+  margin-top: 15px;
+}
+
+.sliders .slick-prev {
+  left: -15px;
+  z-index: 100;
+}
+.sliders .slick-next {
+  right: -5px;
+}
+.sliders .slick-prev::before,
+.sliders .slick-next::before {
+  font-size: 35px;
+  opacity: 1;
+  color: #666161;
+}
+
+.show-list-products img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.product-info {
+  width: 100%;
+  box-shadow: 2px 2px 2px 5px rgba(251, 249, 249, 0.25);
+  position: relative;
+}
+
+.product-info button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+table td,
+table th {
+  vertical-align: middle;
+  text-align: center;
+}
+table img {
+  max-width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
